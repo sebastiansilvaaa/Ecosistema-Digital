@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriVida — Tu guía de nutrición saludable</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="logo-icon">🥗</span>
+        <span class="logo-text">NutriVida</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="#features">Funciones</a>
+        <a href="#about">Nosotros</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="pages/login.html" class="btn btn--outline">Iniciar sesión</a>
+        <a href="pages/register.html" class="btn btn--primary">Registrarse</a>
+      </div>
+      <button class="navbar__hamburger" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="badge">🌱 Tu bienestar empieza aquí</span>
+        <h1 class="hero__title">Come mejor,<br /><span class="highlight">vive mejor.</span></h1>
+        <p class="hero__subtitle">
+          NutriVida te ayuda a planificar tu alimentación, registrar tus comidas
+          y alcanzar tus metas de salud con el respaldo de la ciencia nutricional.
+        </p>
+        <div class="hero__cta">
+          <a href="pages/register.html" class="btn btn--primary btn--lg">Empezar gratis</a>
+          <a href="#features" class="btn btn--ghost btn--lg">Ver funciones</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <strong>10 k+</strong>
+            <span>Usuarios activos</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>500+</strong>
+            <span>Recetas saludables</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>4.9 ★</strong>
+            <span>Valoración media</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="image-card">
+          <div class="image-card__mock">
+            <div class="mock-header">
+              <span class="mock-dot red"></span>
+              <span class="mock-dot yellow"></span>
+              <span class="mock-dot green"></span>
+              <span class="mock-title">Resumen del día</span>
+            </div>
+            <div class="mock-body">
+              <div class="macro-row">
+                <span>Calorías</span>
+                <div class="bar-wrap"><div class="bar bar--cal" style="width:72%"></div></div>
+                <span>1 440 / 2 000 kcal</span>
+              </div>
+              <div class="macro-row">
+                <span>Proteínas</span>
+                <div class="bar-wrap"><div class="bar bar--pro" style="width:55%"></div></div>
+                <span>83 / 150 g</span>
+              </div>
+              <div class="macro-row">
+                <span>Carbohidratos</span>
+                <div class="bar-wrap"><div class="bar bar--carb" style="width:80%"></div></div>
+                <span>200 / 250 g</span>
+              </div>
+              <div class="macro-row">
+                <span>Grasas</span>
+                <div class="bar-wrap"><div class="bar bar--fat" style="width:40%"></div></div>
+                <span>28 / 70 g</span>
+              </div>
+              <div class="mock-meals">
+                <p class="mock-section-title">Comidas de hoy</p>
+                <div class="meal-item">🍳 Desayuno — Avena con frutas <span>320 kcal</span></div>
+                <div class="meal-item">🥗 Almuerzo — Ensalada de pollo <span>540 kcal</span></div>
+                <div class="meal-item">🍎 Snack — Manzana + almendras <span>180 kcal</span></div>
+                <div class="meal-item muted">🍽️ Cena — Pendiente…</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Funcionalidades</span>
+        <h2>Todo lo que necesitas<br />en un solo lugar</h2>
+        <p>Herramientas diseñadas para hacer que comer sano sea sencillo y sostenible.</p>
+      </div>
+      <div class="features__grid">
+
+        <div class="feature-card">
+          <div class="feature-card__icon">📊</div>
+          <h3>Seguimiento de macros</h3>
+          <p>Registra calorías, proteínas, grasas y carbohidratos de cada comida con nuestra extensa base de alimentos.</p>
+          <span class="feature-tag">Próximamente</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🗓️</div>
+          <h3>Plan de comidas semanal</h3>
+          <p>Diseña tu menú de la semana y genera automáticamente la lista de la compra.</p>
+          <span class="feature-tag">Próximamente</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🍽️</div>
+          <h3>Recetas saludables</h3>
+          <p>Explora cientos de recetas filtradas por objetivo, tiempo de preparación e ingredientes disponibles.</p>
+          <span class="feature-tag">Próximamente</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🎯</div>
+          <h3>Objetivos personalizados</h3>
+          <p>Define tus metas (perder peso, ganar músculo, mantenerte) y recibe recomendaciones adaptadas a ti.</p>
+          <span class="feature-tag">Próximamente</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">📈</div>
+          <h3>Progreso y estadísticas</h3>
+          <p>Visualiza tu evolución con gráficas claras de peso, ingesta calórica y adherencia al plan.</p>
+          <span class="feature-tag">Próximamente</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">💧</div>
+          <h3>Hidratación diaria</h3>
+          <p>Controla tu consumo de agua y recibe recordatorios personalizados para mantenerte bien hidratado.</p>
+          <span class="feature-tag">Próximamente</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <span class="badge">Sobre nosotros</span>
+        <h2>Nutrición basada<br />en evidencia</h2>
+        <p>
+          NutriVida nació con la misión de democratizar el acceso a información
+          nutricional de calidad. Nuestro equipo combina experiencia en dietética,
+          tecnología y diseño para ofrecerte una herramienta que realmente funciona.
+        </p>
+        <ul class="about__list">
+          <li>✔ Información avalada por nutricionistas certificados</li>
+          <li>✔ Base de datos con más de 50 000 alimentos</li>
+          <li>✔ Sin dietas extremas ni promesas vacías</li>
+          <li>✔ Privacidad de tus datos garantizada</li>
+        </ul>
+      </div>
+      <div class="about__cards">
+        <div class="about-card about-card--green">
+          <span class="about-card__num">50 k+</span>
+          <span class="about-card__label">Alimentos en base de datos</span>
+        </div>
+        <div class="about-card about-card--teal">
+          <span class="about-card__num">98%</span>
+          <span class="about-card__label">Usuarios satisfechos</span>
+        </div>
+        <div class="about-card about-card--lime">
+          <span class="about-card__num">24/7</span>
+          <span class="about-card__label">Soporte disponible</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="section-header">
+        <span class="badge">Contacto</span>
+        <h2>¿Tienes alguna pregunta?</h2>
+        <p>Escríbenos y te responderemos lo antes posible.</p>
+      </div>
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg">Enviar mensaje</button>
+        <p class="form-feedback" id="formFeedback"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-icon">🥗</span>
+        <span class="logo-text">NutriVida</span>
+        <p>Come mejor, vive mejor.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <strong>Plataforma</strong>
+          <a href="#">Funciones</a>
+          <a href="#">Precios</a>
+          <a href="#">Novedades</a>
+        </div>
+        <div class="footer__col">
+          <strong>Recursos</strong>
+          <a href="#">Blog</a>
+          <a href="#">Recetas</a>
+          <a href="#">Guías</a>
+        </div>
+        <div class="footer__col">
+          <strong>Legal</strong>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 NutriVida. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
