@@ -337,62 +337,84 @@ body {
   flex-shrink: 0;
 }
 
-/* ---------- Infografía ---------- */
+/* ---------- Contenido Educativo ---------- */
 .edu-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 32px;
   align-items: start;
 }
 
-@media (max-width: 768px) {
-  .edu-content { grid-template-columns: 1fr; gap: 40px; }
+.edu-card {
+  background: var(--white);
+  border: 1.5px solid var(--green-200);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.edu-item__title {
-  font-size: 1.25rem;
+.edu-card__header {
+  padding: 28px 28px 20px;
+  text-align: center;
+  background: linear-gradient(160deg, var(--green-50) 0%, var(--white) 100%);
+  border-bottom: 1px solid var(--green-100);
+}
+
+.edu-card__tag {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--green-700);
+  background: var(--green-100);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.edu-card__title {
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--gray-900);
   margin-bottom: 8px;
 }
 
-.edu-item__desc {
-  font-size: .9rem;
+.edu-card__desc {
+  font-size: .875rem;
   color: var(--gray-600);
-  margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
-.infografia-wrapper {
+.edu-card__media {
+  padding: 24px;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  background: var(--gray-50);
 }
 
-.infografia-img {
-  width: 100%;
-  max-width: 380px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+.edu-media {
   display: block;
-}
-
-.video-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.edu-video {
+  border-radius: var(--radius-md);
   width: 100%;
-  max-width: 340px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  max-width: 320px;
+}
+
+.edu-media--img {
+  box-shadow: 0 4px 20px rgba(0,0,0,.10);
+}
+
+.edu-media--video {
+  box-shadow: 0 4px 20px rgba(0,0,0,.15);
   background: var(--gray-900);
-  display: block;
 }
 
-@media (max-width: 480px) {
-  .infografia-img,
-  .edu-video { max-width: 100%; }
+@media (max-width: 768px) {
+  .edu-content { grid-template-columns: 1fr; }
+  .edu-media { max-width: 100%; }
 }
 
 /* ---------- Drive Banner ---------- */
