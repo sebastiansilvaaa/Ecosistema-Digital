@@ -183,6 +183,12 @@ body {
   transition: color .18s;
 }
 .navbar__links a:hover { color: var(--green-600); }
+.navbar__links a.active {
+  color: var(--green-600);
+  font-weight: 600;
+  border-bottom: 2px solid var(--green-500);
+  padding-bottom: 2px;
+}
 
 .navbar__actions {
   display: flex;
@@ -207,6 +213,69 @@ body {
   background: var(--gray-700);
   border-radius: 2px;
   transition: all .25s;
+}
+
+/* ---------- Page content (páginas internas) ---------- */
+.page-content {
+  padding: 72px 0 96px;
+}
+
+.page-hero {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 64px;
+}
+
+.page-hero__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.page-hero__subtitle {
+  font-size: 1.075rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow .2s, transform .2s;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.card__icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: .925rem;
+  color: var(--gray-600);
+  line-height: 1.65;
 }
 
 /* ---------- Hero ---------- */

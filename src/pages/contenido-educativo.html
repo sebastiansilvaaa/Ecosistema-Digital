@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contenido Educativo — NutriVida</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="navbar__logo">
+        <span class="logo-icon">🥗</span>
+        <span class="logo-text">NutriVida</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="../index.html#features">Funciones</a>
+        <a href="../index.html#about">Nosotros</a>
+        <a href="../index.html#contact">Contacto</a>
+        <a href="modulo-productividad.html">Módulo de productividad</a>
+        <a href="contenido-educativo.html" class="active">Contenido educativo</a>
+        <a href="validacion-critica.html">Validación crítica</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="login.html" class="btn btn--outline">Iniciar sesión</a>
+        <a href="register.html" class="btn btn--primary">Registrarse</a>
+      </div>
+      <button class="navbar__hamburger" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <main class="page-content">
+    <div class="container">
+      <div class="page-hero">
+        <span class="badge">📚 Aprende</span>
+        <h1 class="page-hero__title">Contenido <span class="highlight">Educativo</span></h1>
+        <p class="page-hero__subtitle">
+          Accede a recursos verificados por expertos en nutrición para tomar
+          decisiones informadas sobre tu alimentación y salud.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card__icon">📖</div>
+          <h3>Artículos de nutrición</h3>
+          <p>Lee artículos redactados por nutricionistas certificados sobre macronutrientes, vitaminas y minerales.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🎥</div>
+          <h3>Video tutoriales</h3>
+          <p>Aprende con videos explicativos sobre preparación de alimentos saludables y hábitos nutricionales.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🧪</div>
+          <h3>Estudios científicos</h3>
+          <p>Consulta resúmenes accesibles de las últimas investigaciones en ciencias de la nutrición.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📝</div>
+          <h3>Guías prácticas</h3>
+          <p>Descarga guías paso a paso para crear planes de alimentación adaptados a tus necesidades.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

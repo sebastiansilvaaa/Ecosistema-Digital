@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validación Crítica — NutriVida</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="navbar__logo">
+        <span class="logo-icon">🥗</span>
+        <span class="logo-text">NutriVida</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="../index.html#features">Funciones</a>
+        <a href="../index.html#about">Nosotros</a>
+        <a href="../index.html#contact">Contacto</a>
+        <a href="modulo-productividad.html">Módulo de productividad</a>
+        <a href="contenido-educativo.html">Contenido educativo</a>
+        <a href="validacion-critica.html" class="active">Validación crítica</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="login.html" class="btn btn--outline">Iniciar sesión</a>
+        <a href="register.html" class="btn btn--primary">Registrarse</a>
+      </div>
+      <button class="navbar__hamburger" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <main class="page-content">
+    <div class="container">
+      <div class="page-hero">
+        <span class="badge">🔍 Análisis</span>
+        <h1 class="page-hero__title">Validación <span class="highlight">Crítica</span></h1>
+        <p class="page-hero__subtitle">
+          Verifica la veracidad de la información nutricional que consumes. Identifica
+          mitos, tendencias sin respaldo científico y fuentes poco confiables.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card__icon">✅</div>
+          <h3>Verificador de mitos</h3>
+          <p>Introduce cualquier afirmación nutricional y obtén un análisis basado en evidencia científica actualizada.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🔬</div>
+          <h3>Análisis de fuentes</h3>
+          <p>Evalúa la credibilidad de artículos, blogs y publicaciones en redes sociales sobre nutrición y salud.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">⚠️</div>
+          <h3>Alertas de tendencias</h3>
+          <p>Mantente informado sobre dietas y productos sin respaldo científico que circulan en internet.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🏆</div>
+          <h3>Contenido certificado</h3>
+          <p>Accede a una biblioteca de información validada por profesionales de la salud y la nutrición.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

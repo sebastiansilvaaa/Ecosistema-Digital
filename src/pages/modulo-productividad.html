@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo de Productividad — NutriVida</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="navbar__logo">
+        <span class="logo-icon">🥗</span>
+        <span class="logo-text">NutriVida</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="../index.html#features">Funciones</a>
+        <a href="../index.html#about">Nosotros</a>
+        <a href="../index.html#contact">Contacto</a>
+        <a href="modulo-productividad.html" class="active">Módulo de productividad</a>
+        <a href="contenido-educativo.html">Contenido educativo</a>
+        <a href="validacion-critica.html">Validación crítica</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="login.html" class="btn btn--outline">Iniciar sesión</a>
+        <a href="register.html" class="btn btn--primary">Registrarse</a>
+      </div>
+      <button class="navbar__hamburger" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <main class="page-content">
+    <div class="container">
+      <div class="page-hero">
+        <span class="badge">⚡ Productividad</span>
+        <h1 class="page-hero__title">Módulo de <span class="highlight">Productividad</span></h1>
+        <p class="page-hero__subtitle">
+          Organiza tu día, gestiona tus metas nutricionales y lleva un seguimiento
+          detallado de tu progreso para maximizar tu bienestar.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card__icon">📅</div>
+          <h3>Planificación diaria</h3>
+          <p>Organiza tus comidas y actividades del día para mantener un estilo de vida saludable y equilibrado.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🎯</div>
+          <h3>Seguimiento de metas</h3>
+          <p>Define tus objetivos nutricionales y monitorea tu avance con estadísticas en tiempo real.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📊</div>
+          <h3>Reportes de progreso</h3>
+          <p>Visualiza tu evolución mediante gráficos y reportes personalizados semana a semana.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🔔</div>
+          <h3>Recordatorios inteligentes</h3>
+          <p>Recibe notificaciones para hidratación, comidas y suplementos en los momentos precisos.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
