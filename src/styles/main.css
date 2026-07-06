@@ -417,6 +417,142 @@ body {
   .edu-media { max-width: 100%; }
 }
 
+/* ---------- Validación Crítica ---------- */
+.vc-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.vc-desc-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 22px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid;
+}
+
+.vc-desc-card--danger {
+  background: #fff8f8;
+  border-color: #fca5a5;
+}
+
+.vc-desc-card--success {
+  background: var(--green-50);
+  border-color: var(--green-200);
+}
+
+.vc-desc-card__icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.vc-desc-card h3 {
+  font-size: .975rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 6px;
+}
+
+.vc-desc-card p {
+  font-size: .85rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+.vc-docs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.vc-doc-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  border: 1.5px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+}
+
+.vc-doc-card__header {
+  padding: 20px 24px 16px;
+  text-align: center;
+}
+
+.vc-doc-card__header--danger {
+  background: linear-gradient(135deg, #fff1f1 0%, var(--white) 100%);
+  border-bottom: 1px solid #fca5a5;
+}
+
+.vc-doc-card__header--success {
+  background: linear-gradient(135deg, var(--green-50) 0%, var(--white) 100%);
+  border-bottom: 1px solid var(--green-100);
+}
+
+.vc-doc-tag {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.vc-doc-tag--danger {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.vc-doc-tag--success {
+  color: var(--green-700);
+  background: var(--green-100);
+}
+
+.vc-doc-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1.3;
+}
+
+.vc-doc-card__viewer {
+  background: var(--gray-100);
+  padding: 0;
+}
+
+.vc-pdf-frame {
+  width: 100%;
+  height: 620px;
+  border: none;
+  display: block;
+}
+
+.vc-doc-card__footer {
+  padding: 16px 24px;
+  text-align: center;
+  border-top: 1px solid var(--gray-200);
+  background: var(--white);
+}
+
+.btn--sm {
+  padding: 7px 16px;
+  font-size: .85rem;
+}
+
+@media (max-width: 768px) {
+  .vc-description { grid-template-columns: 1fr; }
+  .vc-docs { grid-template-columns: 1fr; }
+  .vc-pdf-frame { height: 480px; }
+}
+
 /* ---------- Drive Banner ---------- */
 .drive-banner {
   display: flex;

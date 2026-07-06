@@ -36,36 +36,76 @@
   <main class="page-content">
     <div class="container">
       <div class="page-hero">
-        <span class="badge">🔍 Análisis</span>
-        <h1 class="page-hero__title">Validación <span class="highlight">Crítica</span></h1>
+        <span class="badge">🔍 Validación crítica</span>
+        <h1 class="page-hero__title">Planificación alimentaria: <span class="highlight">IA vs. Profesional</span></h1>
         <p class="page-hero__subtitle">
-          Verifica la veracidad de la información nutricional que consumes. Identifica
-          mitos, tendencias sin respaldo científico y fuentes poco confiables.
+          Comparamos una planificación alimentaria generada íntegramente por Inteligencia Artificial
+          con su versión corregida por un nutricionista. Analiza las diferencias, identifica los errores
+          y comprende por qué el criterio profesional sigue siendo indispensable en nutrición clínica.
         </p>
       </div>
 
-      <div class="cards-grid">
-        <div class="card">
-          <div class="card__icon">✅</div>
-          <h3>Verificador de mitos</h3>
-          <p>Introduce cualquier afirmación nutricional y obtén un análisis basado en evidencia científica actualizada.</p>
+      <!-- DESCRIPCIÓN -->
+      <div class="vc-description">
+        <div class="vc-desc-card vc-desc-card--danger">
+          <div class="vc-desc-card__icon">🤖</div>
+          <div>
+            <h3>Planificación generada por IA</h3>
+            <p>Documento producido sin supervisión profesional. Presenta errores en el cálculo de requerimientos, distribución de macronutrientes y adecuación clínica del paciente.</p>
+          </div>
         </div>
-        <div class="card">
-          <div class="card__icon">🔬</div>
-          <h3>Análisis de fuentes</h3>
-          <p>Evalúa la credibilidad de artículos, blogs y publicaciones en redes sociales sobre nutrición y salud.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon">⚠️</div>
-          <h3>Alertas de tendencias</h3>
-          <p>Mantente informado sobre dietas y productos sin respaldo científico que circulan en internet.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon">🏆</div>
-          <h3>Contenido certificado</h3>
-          <p>Accede a una biblioteca de información validada por profesionales de la salud y la nutrición.</p>
+        <div class="vc-desc-card vc-desc-card--success">
+          <div class="vc-desc-card__icon">✅</div>
+          <div>
+            <h3>Planificación corregida por nutricionista</h3>
+            <p>Versión revisada y validada por un profesional. Incorpora criterio clínico, corrección de fórmulas, diagnóstico nutricional adecuado y una redacción técnica apropiada.</p>
+          </div>
         </div>
       </div>
+
+      <!-- DOCUMENTOS PDF -->
+      <div class="vc-docs">
+        <div class="vc-doc-card">
+          <div class="vc-doc-card__header vc-doc-card__header--danger">
+            <span class="vc-doc-tag vc-doc-tag--danger">⚠️ Versión IA</span>
+            <h2 class="vc-doc-card__title">Planificación generada por IA</h2>
+          </div>
+          <div class="vc-doc-card__viewer">
+            <iframe
+              src="../docs/IA-Mala.pdf"
+              title="Planificación alimentaria generada por IA"
+              class="vc-pdf-frame"
+            ></iframe>
+          </div>
+          <div class="vc-doc-card__footer">
+            <a href="../docs/IA-Mala.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">
+              Abrir en nueva pestaña
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="vc-doc-card">
+          <div class="vc-doc-card__header vc-doc-card__header--success">
+            <span class="vc-doc-tag vc-doc-tag--success">✅ Versión corregida</span>
+            <h2 class="vc-doc-card__title">Planificación corregida por nutricionista</h2>
+          </div>
+          <div class="vc-doc-card__viewer">
+            <iframe
+              src="../docs/Corregido.pdf"
+              title="Planificación alimentaria corregida por nutricionista"
+              class="vc-pdf-frame"
+            ></iframe>
+          </div>
+          <div class="vc-doc-card__footer">
+            <a href="../docs/Corregido.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+              Abrir en nueva pestaña
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
