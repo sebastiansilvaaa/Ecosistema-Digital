@@ -889,6 +889,121 @@ body {
   color: var(--white);
 }
 
+/* ---------- Servicios ---------- */
+.servicios {
+  padding: 96px 0;
+  background: var(--white);
+}
+
+.servicios__intro {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 56px;
+}
+.servicios__intro h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.servicios__intro p {
+  color: var(--gray-600);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.servicios__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.servicio-card {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: box-shadow .2s, transform .2s;
+  height: 100%;
+}
+.servicio-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+/* Tarjeta central destacada */
+.servicio-card--accent {
+  background: var(--green-600);
+  border-color: var(--green-600);
+  color: var(--white);
+}
+.servicio-card--accent h3 {
+  color: var(--white);
+}
+.servicio-card--accent .servicio-label {
+  background: rgba(255,255,255,.2);
+  color: var(--white);
+}
+.servicio-card--accent p {
+  color: rgba(255,255,255,.88);
+}
+.servicio-card--accent .servicio-card__num {
+  color: rgba(255,255,255,.4);
+}
+
+.servicio-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.servicio-card__num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gray-200);
+  line-height: 1;
+  letter-spacing: -.02em;
+}
+.servicio-card__icon {
+  font-size: 2rem;
+}
+
+.servicio-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1.35;
+}
+
+.servicio-card__block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.servicio-label {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  background: var(--green-100);
+  color: var(--green-700);
+  padding: 3px 10px;
+  border-radius: 999px;
+  align-self: flex-start;
+}
+
+.servicio-card__block p {
+  font-size: .9rem;
+  color: var(--gray-600);
+  line-height: 1.65;
+}
+
 /* ---------- About ---------- */
 .about {
   padding: 96px 0;
@@ -1041,7 +1156,8 @@ body {
   .hero__image { display: none; }
   .features__grid { grid-template-columns: repeat(2, 1fr); }
   .about__inner { grid-template-columns: 1fr; }
-  .about__grid  { grid-template-columns: 1fr; }
+  .about__grid     { grid-template-columns: 1fr; }
+  .servicios__grid { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; }
 }
 
