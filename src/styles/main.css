@@ -172,22 +172,30 @@ body {
 
 .navbar__links {
   display: flex;
-  gap: 28px;
+  gap: 8px;
   margin-left: auto;
 }
 .navbar__links a {
   text-decoration: none;
   color: var(--gray-600);
   font-weight: 500;
-  font-size: .925rem;
-  transition: color .18s;
+  font-size: .875rem;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  transition: all .2s;
+  white-space: nowrap;
 }
-.navbar__links a:hover { color: var(--green-600); }
+.navbar__links a:hover {
+  color: var(--green-700);
+  background: var(--green-50);
+  border-color: var(--green-200);
+}
 .navbar__links a.active {
-  color: var(--green-600);
+  color: var(--white);
+  background: var(--green-600);
+  border-color: var(--green-600);
   font-weight: 600;
-  border-bottom: 2px solid var(--green-500);
-  padding-bottom: 2px;
 }
 
 .navbar__actions {
