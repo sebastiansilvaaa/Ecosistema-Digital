@@ -337,144 +337,23 @@ body {
   flex-shrink: 0;
 }
 
-/* ---------- Infographic ---------- */
-.infographic-wrapper {
+/* ---------- Infografía ---------- */
+.infografia-wrapper {
   display: flex;
   justify-content: center;
-  padding-bottom: 24px;
+  padding: 8px 0 16px;
 }
 
-.infographic {
+.infografia-img {
+  max-width: 420px;
   width: 100%;
-  max-width: 400px;
-  background: #c5eaf3;
-  border-radius: 28px;
-  padding: 36px 28px 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-}
-
-.infographic__title-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 0.88;
-  gap: 2px;
-}
-
-.infographic__title-line {
-  font-family: 'Fredoka One', cursive;
-  font-size: 4.2rem;
-  color: #174242;
-  letter-spacing: 3px;
-  text-align: center;
   display: block;
 }
 
-.infographic__bubble {
-  background: #174242;
-  color: #fff;
-  border-radius: 18px;
-  padding: 18px 20px;
-  font-size: .875rem;
-  line-height: 1.65;
-  text-align: center;
-}
-
-.infographic__bubble--bold p {
-  font-weight: 600;
-  font-size: .9rem;
-  line-height: 1.6;
-}
-
-.infographic__icons-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.infographic__icon-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.infographic__icon-circle {
-  width: 58px;
-  height: 58px;
-  background: #174242;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.45rem;
-}
-
-.infographic__icon-item span {
-  font-size: .72rem;
-  font-weight: 600;
-  color: #174242;
-  text-align: center;
-  line-height: 1.3;
-}
-
-.infographic__stats-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.infographic__stat {
-  background: #174242;
-  color: #fff;
-  border-radius: 18px;
-  padding: 20px 14px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.infographic__stat-icon {
-  font-size: 1.5rem;
-}
-
-.infographic__stat-number {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.infographic__stat-label {
-  font-size: .73rem;
-  line-height: 1.4;
-  opacity: .9;
-}
-
-.infographic__cta {
-  background: #174242;
-  color: #fff;
-  border-radius: 18px;
-  padding: 22px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-.infographic__cta-char {
-  font-size: 2.8rem;
-  line-height: 1;
-}
-
-.infographic__cta p {
-  font-size: .9rem;
-  font-weight: 500;
-  line-height: 1.6;
+@media (max-width: 480px) {
+  .infografia-img { max-width: 100%; }
 }
 
 /* ---------- Drive Banner ---------- */
