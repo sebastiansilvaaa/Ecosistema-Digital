@@ -36,30 +36,31 @@
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__text">
-        <span class="badge">🌱 Tu bienestar empieza aquí</span>
-        <h1 class="hero__title">Come mejor,<br /><span class="highlight">vive mejor.</span></h1>
+        <span class="badge">🌱 Ecosistema Digital de Nutrición</span>
+        <h1 class="hero__title">Aprende, planifica<br /><span class="highlight">y valida con criterio.</span></h1>
         <p class="hero__subtitle">
-          NutriVida te ayuda a planificar tu alimentación, registrar tus comidas
-          y alcanzar tus metas de salud con el respaldo de la ciencia nutricional.
+          Una plataforma educativa diseñada para estudiantes y profesionales de la nutrición.
+          Accede a recursos clínicos, contenido educativo verificado y herramientas
+          para desarrollar pensamiento crítico frente a la IA.
         </p>
         <div class="hero__cta">
-          <a href="pages/register.html" class="btn btn--primary btn--lg">Empezar gratis</a>
-          <a href="#features" class="btn btn--ghost btn--lg">Ver funciones</a>
+          <a href="pages/modulo-productividad.html" class="btn btn--primary btn--lg">Explorar módulos</a>
+          <a href="#pitch" class="btn btn--ghost btn--lg">Ver presentación</a>
         </div>
         <div class="hero__stats">
           <div class="stat">
-            <strong>10 k+</strong>
-            <span>Usuarios activos</span>
+            <strong>3</strong>
+            <span>Módulos activos</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <strong>500+</strong>
-            <span>Recetas saludables</span>
+            <strong>2</strong>
+            <span>Recursos clínicos</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <strong>4.9 ★</strong>
-            <span>Valoración media</span>
+            <strong>IA</strong>
+            <span>Validación crítica</span>
           </div>
         </div>
       </div>
@@ -70,35 +71,47 @@
               <span class="mock-dot red"></span>
               <span class="mock-dot yellow"></span>
               <span class="mock-dot green"></span>
-              <span class="mock-title">Resumen del día</span>
+              <span class="mock-title">Ecosistema Digital</span>
             </div>
             <div class="mock-body">
-              <div class="macro-row">
-                <span>Calorías</span>
-                <div class="bar-wrap"><div class="bar bar--cal" style="width:72%"></div></div>
-                <span>1 440 / 2 000 kcal</span>
+              <div class="mock-module-row">
+                <span class="mock-module-icon">⚡</span>
+                <div class="mock-module-info">
+                  <strong>Módulo de Productividad</strong>
+                  <span>Protocolo clínico · Calculadora nutricional</span>
+                </div>
+                <span class="mock-badge-ok">Activo</span>
               </div>
-              <div class="macro-row">
-                <span>Proteínas</span>
-                <div class="bar-wrap"><div class="bar bar--pro" style="width:55%"></div></div>
-                <span>83 / 150 g</span>
+              <div class="mock-module-row">
+                <span class="mock-module-icon">📚</span>
+                <div class="mock-module-info">
+                  <strong>Contenido Educativo</strong>
+                  <span>Infografía · Video educativo</span>
+                </div>
+                <span class="mock-badge-ok">Activo</span>
               </div>
-              <div class="macro-row">
-                <span>Carbohidratos</span>
-                <div class="bar-wrap"><div class="bar bar--carb" style="width:80%"></div></div>
-                <span>200 / 250 g</span>
+              <div class="mock-module-row">
+                <span class="mock-module-icon">🔍</span>
+                <div class="mock-module-info">
+                  <strong>Validación Crítica</strong>
+                  <span>IA vs Nutricionista · Análisis comparativo</span>
+                </div>
+                <span class="mock-badge-ok">Activo</span>
               </div>
-              <div class="macro-row">
-                <span>Grasas</span>
-                <div class="bar-wrap"><div class="bar bar--fat" style="width:40%"></div></div>
-                <span>28 / 70 g</span>
-              </div>
-              <div class="mock-meals">
-                <p class="mock-section-title">Comidas de hoy</p>
-                <div class="meal-item">🍳 Desayuno — Avena con frutas <span>320 kcal</span></div>
-                <div class="meal-item">🥗 Almuerzo — Ensalada de pollo <span>540 kcal</span></div>
-                <div class="meal-item">🍎 Snack — Manzana + almendras <span>180 kcal</span></div>
-                <div class="meal-item muted">🍽️ Cena — Pendiente…</div>
+              <div class="mock-divider"></div>
+              <div class="mock-stat-row">
+                <div class="mock-stat">
+                  <strong>IMC</strong>
+                  <span>Calculado</span>
+                </div>
+                <div class="mock-stat">
+                  <strong>VCT</strong>
+                  <span>Corregido</span>
+                </div>
+                <div class="mock-stat">
+                  <strong>PDF</strong>
+                  <span>Disponible</span>
+                </div>
               </div>
             </div>
           </div>
@@ -107,57 +120,58 @@
     </div>
   </section>
 
-  <!-- FEATURES -->
+  <!-- PITCH VIDEO -->
+  <section class="pitch" id="pitch">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">🎥 Presentación</span>
+        <h2>Conoce el ecosistema<br /><span class="highlight">en acción</span></h2>
+        <p>Mira nuestra presentación y descubre cómo cada módulo te ayuda a formarte como profesional de la nutrición.</p>
+      </div>
+      <div class="pitch__video-wrapper">
+        <video
+          src="images/Pitch.mp4"
+          controls
+          playsinline
+          class="pitch__video"
+          poster=""
+        >
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÓDULOS -->
   <section class="features" id="features">
     <div class="container">
       <div class="section-header">
-        <span class="badge">Funcionalidades</span>
+        <span class="badge">Módulos</span>
         <h2>Todo lo que necesitas<br />en un solo lugar</h2>
-        <p>Herramientas diseñadas para hacer que comer sano sea sencillo y sostenible.</p>
+        <p>Tres módulos integrados con recursos reales para tu formación y práctica clínica en nutrición.</p>
       </div>
-      <div class="features__grid">
+      <div class="features__grid features__grid--3">
 
-        <div class="feature-card">
-          <div class="feature-card__icon">📊</div>
-          <h3>Seguimiento de macros</h3>
-          <p>Registra calorías, proteínas, grasas y carbohidratos de cada comida con nuestra extensa base de alimentos.</p>
-          <span class="feature-tag">Próximamente</span>
-        </div>
+        <a href="pages/modulo-productividad.html" class="feature-card feature-card--link">
+          <div class="feature-card__icon">⚡</div>
+          <h3>Módulo de Productividad</h3>
+          <p>Accede al <strong>Protocolo Clínico</strong> en Word y la <strong>Calculadora Nutricional</strong> en Excel con IMC, diagnóstico y requerimientos energéticos.</p>
+          <span class="feature-tag feature-tag--active">Ver módulo →</span>
+        </a>
 
-        <div class="feature-card">
-          <div class="feature-card__icon">🗓️</div>
-          <h3>Plan de comidas semanal</h3>
-          <p>Diseña tu menú de la semana y genera automáticamente la lista de la compra.</p>
-          <span class="feature-tag">Próximamente</span>
-        </div>
+        <a href="pages/contenido-educativo.html" class="feature-card feature-card--link">
+          <div class="feature-card__icon">📚</div>
+          <h3>Contenido Educativo</h3>
+          <p>Infografía <strong>"Estudia Sano"</strong> con hacks de alimentación universitaria y video educativo con consejos prácticos para comer bien con poco tiempo.</p>
+          <span class="feature-tag feature-tag--active">Ver módulo →</span>
+        </a>
 
-        <div class="feature-card">
-          <div class="feature-card__icon">🍽️</div>
-          <h3>Recetas saludables</h3>
-          <p>Explora cientos de recetas filtradas por objetivo, tiempo de preparación e ingredientes disponibles.</p>
-          <span class="feature-tag">Próximamente</span>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">🎯</div>
-          <h3>Objetivos personalizados</h3>
-          <p>Define tus metas (perder peso, ganar músculo, mantenerte) y recibe recomendaciones adaptadas a ti.</p>
-          <span class="feature-tag">Próximamente</span>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">📈</div>
-          <h3>Progreso y estadísticas</h3>
-          <p>Visualiza tu evolución con gráficas claras de peso, ingesta calórica y adherencia al plan.</p>
-          <span class="feature-tag">Próximamente</span>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">💧</div>
-          <h3>Hidratación diaria</h3>
-          <p>Controla tu consumo de agua y recibe recordatorios personalizados para mantenerte bien hidratado.</p>
-          <span class="feature-tag">Próximamente</span>
-        </div>
+        <a href="pages/validacion-critica.html" class="feature-card feature-card--link">
+          <div class="feature-card__icon">🔍</div>
+          <h3>Validación Crítica</h3>
+          <p>Comparativa entre una planificación generada por <strong>IA sin supervisión</strong> y su versión <strong>corregida por nutricionista</strong>. Desarrolla pensamiento crítico frente a la tecnología.</p>
+          <span class="feature-tag feature-tag--active">Ver módulo →</span>
+        </a>
 
       </div>
     </div>
@@ -167,32 +181,32 @@
   <section class="about" id="about">
     <div class="container about__inner">
       <div class="about__text">
-        <span class="badge">Sobre nosotros</span>
-        <h2>Nutrición basada<br />en evidencia</h2>
+        <span class="badge">Sobre el proyecto</span>
+        <h2>Nutrición con criterio<br />y respaldo profesional</h2>
         <p>
-          NutriVida nació con la misión de democratizar el acceso a información
-          nutricional de calidad. Nuestro equipo combina experiencia en dietética,
-          tecnología y diseño para ofrecerte una herramienta que realmente funciona.
+          Este ecosistema digital nació para demostrar que la tecnología, bien aplicada,
+          puede ser una aliada poderosa en la formación nutricional. Pero también para
+          evidenciar sus límites: la IA no reemplaza el juicio clínico de un nutricionista.
         </p>
         <ul class="about__list">
-          <li>✔ Información avalada por nutricionistas certificados</li>
-          <li>✔ Base de datos con más de 50 000 alimentos</li>
-          <li>✔ Sin dietas extremas ni promesas vacías</li>
-          <li>✔ Privacidad de tus datos garantizada</li>
+          <li>✔ Recursos clínicos reales y validados</li>
+          <li>✔ Contenido educativo orientado al estudiante universitario</li>
+          <li>✔ Análisis crítico de planificaciones generadas por IA</li>
+          <li>✔ Herramientas operativas listas para usar</li>
         </ul>
       </div>
       <div class="about__cards">
         <div class="about-card about-card--green">
-          <span class="about-card__num">50 k+</span>
-          <span class="about-card__label">Alimentos en base de datos</span>
+          <span class="about-card__num">2</span>
+          <span class="about-card__label">Documentos clínicos</span>
         </div>
         <div class="about-card about-card--teal">
-          <span class="about-card__num">98%</span>
-          <span class="about-card__label">Usuarios satisfechos</span>
+          <span class="about-card__num">IA</span>
+          <span class="about-card__label">Validada críticamente</span>
         </div>
         <div class="about-card about-card--lime">
-          <span class="about-card__num">24/7</span>
-          <span class="about-card__label">Soporte disponible</span>
+          <span class="about-card__num">3</span>
+          <span class="about-card__label">Módulos integrados</span>
         </div>
       </div>
     </div>
